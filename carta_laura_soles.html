@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Laura Cortés</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #fff8dc 0%, #fffacd 50%, #ffd89b 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .carta-container {
+            background: linear-gradient(135deg, #fffef0 0%, #fffaf0 100%);
+            width: 100%;
+            max-width: 600px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(255, 140, 0, 0.3);
+            border-radius: 5px;
+            position: relative;
+            border: 3px solid #ffd700;
+        }
+        
+        /* Decoración de soles en las esquinas */
+        .sol-corner {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            opacity: 0.15;
+        }
+        
+        .sol-top-left {
+            top: 20px;
+            left: 20px;
+        }
+        
+        .sol-top-right {
+            top: 20px;
+            right: 20px;
+            transform: scale(-1, 1);
+        }
+        
+        .sol-bottom-left {
+            bottom: 20px;
+            left: 20px;
+            transform: scale(1, -1);
+        }
+        
+        .sol-bottom-right {
+            bottom: 20px;
+            right: 20px;
+            transform: scale(-1, -1);
+        }
+        
+        .fecha {
+            text-align: right;
+            color: #d4621f;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .saludo {
+            font-size: 1.5em;
+            color: #ff6b35;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        
+        .contenido {
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #3a3a3a;
+            margin-bottom: 30px;
+            text-align: justify;
+            letter-spacing: 0.5px;
+        }
+        
+        .parrafo {
+            margin-bottom: 20px;
+            text-indent: 40px;
+        }
+        
+        .sol-icon {
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 1.2em;
+        }
+        
+        .despedida {
+            margin-top: 35px;
+            color: #d4621f;
+            font-size: 1.1em;
+        }
+        
+        .firma {
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .firma-nombre {
+            font-size: 1em;
+            color: #3a3a3a;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        
+        .decoracion-linea {
+            width: 150px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffd700, transparent);
+            margin: 20px auto;
+        }
+        
+        .titulo-principal {
+            text-align: center;
+            color: #ff8c00;
+            font-size: 2em;
+            margin-bottom: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(255, 140, 0, 0.1);
+        }
+        
+        .nota-especial {
+            background: linear-gradient(135deg, #ffe4b5 0%, #ffdab9 100%);
+            border-left: 5px solid #ffa500;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #d4621f;
+            border-radius: 3px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .carta-container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="carta-container">
+        <!-- Decoración de soles en las esquinas -->
+        <svg class="sol-corner sol-top-left" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="25" fill="#FFD700"/>
+            <line x1="50" y1="10" x2="50" y2="0" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="50" y1="90" x2="50" y2="100" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="10" y1="50" x2="0" y2="50" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="90" y1="50" x2="100" y2="50" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="25" y1="25" x2="17" y2="17" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="75" y1="75" x2="83" y2="83" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="75" y1="25" x2="83" y2="17" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="25" y1="75" x2="17" y2="83" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        
+        <svg class="sol-corner sol-top-right" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="25" fill="#FFD700"/>
+            <line x1="50" y1="10" x2="50" y2="0" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="50" y1="90" x2="50" y2="100" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="10" y1="50" x2="0" y2="50" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="90" y1="50" x2="100" y2="50" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        
+        <svg class="sol-corner sol-bottom-left" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="25" fill="#FFA500"/>
+            <line x1="50" y1="10" x2="50" y2="0" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+            <line x1="50" y1="90" x2="50" y2="100" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+            <line x1="10" y1="50" x2="0" y2="50" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+            <line x1="90" y1="50" x2="100" y2="50" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        
+        <svg class="sol-corner sol-bottom-right" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="25" fill="#FFD700"/>
+            <line x1="50" y1="10" x2="50" y2="0" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="50" y1="90" x2="50" y2="100" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="10" y1="50" x2="0" y2="50" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+            <line x1="90" y1="50" x2="100" y2="50" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        
+        <!-- Contenido de la carta -->
+        <div class="titulo-principal">☀️ Una Carta Especial ☀️</div>
+        
+        <div class="decoracion-linea"></div>
+        
+        <div class="fecha">31 de agosto de 2026</div>
+        
+        <div class="saludo">Querida Laura Cortés,</div>
+        
+        <div class="contenido">
+            <p class="parrafo">
+                Espero que esta carta te encuentre bien, radiante y tan brillante como el sol que ilumina cada día. Escribo estas líneas con el corazón lleno de sinceridad para expresarte lo especial que eres.
+            </p>
+            
+            <p class="parrafo">
+                Así como los soles iluminan y calientan el mundo, tu presencia ilumina los días de quienes te rodean. Tienes esa cualidad maravillosa de llevar luz, alegría y positividad a donde quiera que vas. Eres genuina, especial y única.
+            </p>
+            
+            <div class="nota-especial">
+                <span class="sol-icon">☀️</span> Recuerda que brillas con luz propia, que tu valor no depende de lo que otros piensen, y que mereces toda la felicidad del mundo. <span class="sol-icon">☀️</span>
+            </div>
+            
+            <p class="parrafo">
+                Quiero que sepas que tu presencia en este mundo marca la diferencia. Eres valiosa, eres importante, eres amada. Que nunca olvides brillar con todo tu esplendor, tal como lo hace el sol cada mañana.
+            </p>
+            
+            <p class="parrafo">
+                Con admiración, cariño y los mejores deseos para tu vida, solo quería recordarte cuán especial eres.
+            </p>
+        </div>
+        
+        <div class="despedida">
+            Con todo el cariño 🖤, Yuher Tovar 
+        </div>
+        
+        <div class="firma">
+            <svg width="60" height="20" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="8" fill="#FFD700" opacity="0.6"/>
+                <circle cx="30" cy="10" r="8" fill="#FFA500" opacity="0.6"/>
+                <circle cx="50" cy="10" r="8" fill="#FFD700" opacity="0.6"/>
+            </svg>
+            <div class="firma-nombre">🖤</div>
+        </div>
+    </div>
+</body>
+</html>
